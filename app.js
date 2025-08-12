@@ -1,82 +1,95 @@
-//STRINGS - text characters in double or single quotes
-const firstName = "John";
-const lastName = "Doe";
-const middleName = "Shuddy";
+//CONDITIONAL STATEMENT
+console.log("conditional statement");
 
-//STRING PROPERTIES - length
-console.log(middleName.length, firstName.length);
-// tsring concatenation (joining of strings + a + b)
-const fullName = firstName + " " + lastName;
-console.log(fullName);
-console.log(fullName.length);
-//STRING METHODS - built in JS functions that works on strings
-//toUpperCase, toLowerCase
-console.log(fullName.toUpperCase());
-console.log(fullName.toLowerCase());
+// if statement
+// if(condition) {
+//action
+// lines of code
+//}
 
-//starstWith, endsWith, includes
-console.log(fullName.startsWith("J"));
-console.log(fullName.endsWith("e"));
-console.log(fullName.includes("n D"));
+if (1 < 2) {
+  console.log("Ola");
+}
 
-// replace and replaceAll
-console.log(fullName.replace("J", "#"));
-console.log(fullName.replaceAll("o", "#"));
+let balance = 6000;
+let amount = 8000;
 
-let myEmail = "horlabodehyibrahim@gmail.com";
-console.log(myEmail.length);
-console.log(myEmail.toUpperCase());
-console.log(myEmail.replace("@", "*"));
-console.log(myEmail.includes("m"));
-console.log(myEmail.endsWith("google.com"));
-// charAt, indexOf, lastIndexOf
-// zero based lang (assigning position from 0)
-console.log(myEmail.charAt(2));
-console.log(myEmail.indexOf("o"));
-console.log(myEmail.lastIndexOf("o"));
-// concat, trim, slice, substring, substr
-console.log(fullName.concat(" is my name"));
-// trim- removes whitespaces
-const username = "       user019";
-console.log(username);
-console.log(username.trim());
-console.log(username.trimStart());
-console.log(username.trimEnd());
-//Extract portions of a string
-const surname = "Brooke";
-// slice subststring (start end(non-inclusive))
-console.log(surname.slice(2, 5));
-console.log(surname.substring(1, 5));
-// Substr (start, number of characters)
-console.log(surname.substr(2, 2));
-// Concatination
-const author = "Chinua Achebe";
-const bookTitle = "Things Fall Apart";
-const yearPublished = 1997;
-// template literals `` `${Varnanme}
-const summary = `The ${bookTitle} was authoreed by ${author.toUpperCase()}`;
-const summary2 = `${author} wrote the book ${bookTitle}`;
-console.log(summary2);
-// quote Tinubu saud and i quote 'Let the Poor Breathe'
-const quote = `Tinubu said and i quote 'Let the Poor Breathe'`;
-console.log(quote);
-const helloWorld = "hello world";
-console.log(helloWorld.toUpperCase());
-const java = "JAVASCRIPT";
-console.log(java.toLowerCase());
-const hel = "Hello";
-console.log(hel.slice(0, 1));
-console.log(helloWorld.slice(6, 11));
-const cat = "I like cats";
-console.log(cat);
-console.log(cat.replace("cats", "dogs"));
+if (balance >= amount) {
+  balance -= amount;
+  console.log("Transaction succesful, balance is " + balance);
+}
 
-console.log(helloWorld.startsWith("Hello"));
-const sokratis = "Sokratis Papastathopoulos";
-console.log(sokratis.length);
-const nickName = "Shuddy";
-const favClub = "Barcelona";
-console.log(nickName.toUpperCase());
-console.log(favClub.toLowerCase());
-const sentence = `i am ${nickName} and my favorite club is ${favClub}`;
-console.log(sentence);
+// Determine if the passowrd is long enough (>= 10)
+// improve your logic check if the password contains '#' - good password
+
+const password = "#password1234";
+if (password.length >= 10 && password.includes("#")) {
+  console.log("Password is good enough");
+}
+
+// log to the console if a users age is eligible to vote (18)
+const age = 12;
+//const eligibleAge = 18;
+if (age >= 18) {
+  console.log("You are Eligible to Vote");
+}
+// If else statement
+if (9 > 7) {
+  console.log("YES");
+} else {
+  console.log("NO");
+}
+
+if (balance >= amount) {
+  balance -= amount;
+  console.log("Transaction succesful, balance is " + balance);
+} else {
+  console.log("Insufficient fund");
+}
+
+// Write an if else statement to check if a num is positive or negative
+
+const num = 70;
+if (num > 0) {
+  console.log("POSITVE");
+} else {
+  console.log("NEGATIVE");
+}
+
+// write an if else statement to determine if a number is odd or even
+const numb = 6;
+if (numb % 2 == 0) {
+  console.log("EVEN");
+} else {
+  console.log("ODD");
+}
+
+// Multiple else if
+// overpopulated >= 300, underpopulated <= 50, balanced populated > 50 < 300
+const censusResult = 500;
+if (censusResult >= 300) {
+  console.log("OVER POPULATED");
+} else if (censusResult <= 50) {
+  console.log("UNDER POPULATED");
+} else {
+  console.log("BALANCED POPULATED");
+}
+
+// Lottery system for a company a b c (winner) d
+const usersChoice = "a";
+
+if (usersChoice == "c") {
+  console.log("CONGRATULATIONS");
+} else {
+  console.log("Try Again");
+}
+
+// Lottery system for a company4 choices a (trip to DUBAI) b(try again) c(car)  d (blender)
+const usersChoiceB = "a";
+if (usersChoiceB == "a") {
+  console.log("Trip to Dubai");
+} else if (usersChoiceB == "c") {
+  console.log("CAR");
+} else if (usersChoiceB == "d") {
+  console.log("Blender");
+} else "Try Again";
