@@ -7,7 +7,7 @@ console.log(5 <= 9);
 console.log(10 >= 10);
 
 // == (loose- does not care about data types)
-// === (strict) - chech data type
+// === (strict) - check data type
 
 console.log("5" == 5);
 console.log("5" === 5);
@@ -16,7 +16,7 @@ const atmPin = 1234;
 const enteredPin = 1224;
 atmPin === enteredPin; // false -> incorrect pin
 let bal = 10000;
-const transferAmount = 2000;
+const transferAmount = 20000;
 bal >= transferAmount; // false -> insufficient funds
 
 // LOGICAL OPERATORS and && or ||  not !

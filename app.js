@@ -1,95 +1,99 @@
-//CONDITIONAL STATEMENT
-console.log("conditional statement");
+// Two teams — Team A and Team B — compete in a game three times.
+// Their scores are as follows:
 
-// if statement
-// if(condition) {
-//action
-// lines of code
-//}
+// Team A: 96, 108, 89
 
-if (1 < 2) {
-  console.log("Ola");
-}
+// Team B: 88, 91, 110
 
-let balance = 6000;
-let amount = 8000;
+// Write a JavaScript program to:
 
-if (balance >= amount) {
-  balance -= amount;
-  console.log("Transaction succesful, balance is " + balance);
-}
+// Calculate the average score for each team.
 
-// Determine if the passowrd is long enough (>= 10)
-// improve your logic check if the password contains '#' - good password
+// Determine which team has the higher average score.
 
-const password = "#password1234";
-if (password.length >= 10 && password.includes("#")) {
-  console.log("Password is good enough");
-}
+// Print the winning team and their average score. If the averages are the same, print "It's a draw!".
 
-// log to the console if a users age is eligible to vote (18)
-const age = 12;
-//const eligibleAge = 18;
-if (age >= 18) {
-  console.log("You are Eligible to Vote");
-}
-// If else statement
-if (9 > 7) {
-  console.log("YES");
+// e.g Team B wins with an average score of 96.33
+
+const totalscoreofteamA = 96 + 108 + 89;
+console.log(totalscoreofteamA);
+const totalscoreofteamB = 88 + 91 + 110;
+console.log(totalscoreofteamB);
+const AvgOfA = totalscoreofteamA / 3;
+console.log(AvgOfA);
+const AvgOfB = totalscoreofteamB / 3;
+console.log(AvgOfB);
+if (AvgOfA > AvgOfB) {
+  console.log(`Team A wins with an average score of ${AvgOfA}`);
+} else if (AvgOfB > AvgOfA) {
+  console.log(`Team B wins with an average score of ${AvgOfB}`);
 } else {
-  console.log("NO");
+  console.log("Its a Draw");
 }
 
-if (balance >= amount) {
-  balance -= amount;
-  console.log("Transaction succesful, balance is " + balance);
+//QUESTION 2
+
+// A user is shopping online and has 3 items in their cart with the following prices:
+
+// Item 1: 120
+
+// Item 2: 80
+
+// Item 3: 150
+
+// The user’s account balance is 400.
+
+// Tasks:
+
+// Store the prices of the three items in separate variables.
+
+// Calculate the total cost of all items in the cart.
+
+// Use a conditional statement to determine if the user can proceed to checkout:
+
+// If the balance is greater than or equal to the total cost, print "You can checkout".
+
+// Otherwise, print "Insufficient balance".
+
+const Item1 = 120;
+const Item2 = 80;
+const Item3 = 150;
+const UsersBalance = 400;
+
+const TotalCost = Item1 + Item2 + Item3;
+
+// if (TotalCost > UsersBalance) {
+//   console.log("You can checkout");
+// } else {
+//   console.log("Inufficient Balance");
+// }
+
+UsersBalance >= TotalCost
+  ? console.log("You can checkout")
+  : console.log("Insufficient Balance");
+
+const Movieage = 18;
+const Userage = 20;
+// if (Userage > Movieage) {
+//   console.log("You can watch the movie");
+// } else {
+//   console.log("Your are not old enough");
+// }
+Userage > Movieage
+  ? console.log("You can watch the movie")
+  : console.log("Your are not old enough");
+const ticketPrice = 150;
+const disccount = 30;
+const userB = 120;
+const isFan = false;
+const disccountP = ticketPrice - disccount;
+if (isFan) {
+  console.log(`You are paying${disccountP}`);
 } else {
-  console.log("Insufficient fund");
+  console.log(`You are paying ${ticketPrice}`);
 }
-
-// Write an if else statement to check if a num is positive or negative
-
-const num = 70;
-if (num > 0) {
-  console.log("POSITVE");
+if (userB >= ticketPrice || userB >= disccountP) {
+  console.log("You can buy the football ticket");
 } else {
-  console.log("NEGATIVE");
+  console.log("You do not have enough money for the football ticket");
 }
-
-// write an if else statement to determine if a number is odd or even
-const numb = 6;
-if (numb % 2 == 0) {
-  console.log("EVEN");
-} else {
-  console.log("ODD");
-}
-
-// Multiple else if
-// overpopulated >= 300, underpopulated <= 50, balanced populated > 50 < 300
-const censusResult = 500;
-if (censusResult >= 300) {
-  console.log("OVER POPULATED");
-} else if (censusResult <= 50) {
-  console.log("UNDER POPULATED");
-} else {
-  console.log("BALANCED POPULATED");
-}
-
-// Lottery system for a company a b c (winner) d
-const usersChoice = "a";
-
-if (usersChoice == "c") {
-  console.log("CONGRATULATIONS");
-} else {
-  console.log("Try Again");
-}
-
-// Lottery system for a company4 choices a (trip to DUBAI) b(try again) c(car)  d (blender)
-const usersChoiceB = "a";
-if (usersChoiceB == "a") {
-  console.log("Trip to Dubai");
-} else if (usersChoiceB == "c") {
-  console.log("CAR");
-} else if (usersChoiceB == "d") {
-  console.log("Blender");
-} else "Try Again";
