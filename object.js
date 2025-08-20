@@ -27,6 +27,7 @@ console.log(person.maritalSummary());
 console.log(person.name);
 console.log(person.friends);
 console.log(person.friends[1]);
+
 // Bracket notation -- objectName['propertyName']
 console.log(person["friends"][0]);
 
@@ -42,6 +43,7 @@ console.log(person);
 // Nested Object
 const customer = {
   id: " Cust-12",
+
   personalInfo: {
     firstName: "Peter",
     lastName: "Pan",
@@ -49,6 +51,7 @@ const customer = {
     dateOfBirth: "1990-06-12",
     nationality: "Nigerian",
   },
+
   contactInfo: {
     email: "peterpan13@gmail.com",
     phone: "+23409208878270",
@@ -58,6 +61,7 @@ const customer = {
       postalCode: "100001",
     },
   },
+
   accountInfo: {
     cardTypes: "Visa",
     accountNumber: "012345678",
@@ -71,7 +75,7 @@ const customer = {
   },
 };
 
-// Write a method called greeting- Hello Peter, Welcome Back
+// Write a method called greeting- Hello Peter, Welcome Back 
 // write a method getAddress - Peter lives at 12 Bode Thomas street, Lagos
 console.log(customer.personalInfo.dateOfBirth);
 console.log(customer.contactInfo.address.street);
@@ -104,4 +108,3 @@ const {
 } = book;
 console.log(title, yearPublished, theme);
 console.log(country);
-

@@ -20,7 +20,7 @@ console.log(Math.trunc(10.23)); // it removes decimal point
 
 // random - it  generates psuedorandom nums between 0-1
 console.log(Math.random());
-// 0 - 1
+// 0 - 1  
 console.log(Math.trunc(Math.random() * 10));
 
 // 1-20

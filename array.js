@@ -82,7 +82,7 @@ const newTransactions = transactions.map((transaction) => transaction / 10);
 console.log(newTransactions);
 
 // find and filter
-// Find- returns the first element that passes a serch conditions
+// Find- returns the first element that passes a search conditions
 const bestUser = users.find((user) => user.startsWith("a"));
 console.log(bestUser);
 const greaterThan500 = transactions.find((transaction) => transaction > 500);
@@ -104,11 +104,11 @@ console.log(lowToHigh);
 const highToLow = specialNumbers.sort((a, b) => b - a);
 console.log(highToLow);
 
-// every
+// every- return a true or false statement.
 const allGreaterThan10 = specialNumbers.every((num) => num > 10);
 console.log(allGreaterThan10);
 
-//some
+//some -  return a true or false statement.
 const someGreaterThan10 = specialNumbers.some((num) => num > 10);
 console.log(someGreaterThan10);
 
