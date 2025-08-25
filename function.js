@@ -2,7 +2,7 @@
 // reusable blocks of code that perfoms a specific task or return a value
 // call or invoke the function
 
-// a function that welcomes our user when the log in
+// a function that welcomes our user when they log in
 
 function welcomeUser() {
   console.log("WELCOME USER");
@@ -180,10 +180,10 @@ const checkLoanEligibility = (loanAmount) => {
     return "User is Eligible";
   }
 };
-console.log(checkLoanEligibility(50000));
+console.log(checkLoanEligibility(5000));
 
-const checkLoanEligibility1 = (loanAmount) =>
-  savings * 2 < loanAmount ? "User is Inligible" : "User is Eligible";
+// const checkLoanEligibility1 = (loanAmount) =>
+//   savings * 2 < loanAmount ? "User is Inligible" : "User is Eligible";
 
 const containSubstring = (str, substr) => str.includes(substr);
 console.log(containSubstring("daniel", "nie"));

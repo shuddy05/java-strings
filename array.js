@@ -120,6 +120,6 @@ const totalPrice = cartPrices.reduce((acc, curr) => {
 }, 10);
 console.log(totalPrice);
 
-// Split -
+// Split - convert a string into an array
 let myName = "Banana is healthy";
 console.log(myName.split(" "));

@@ -1,5 +1,3 @@
-
-
 const users = ["Ade", "Ola", "Dan", "Pius"];
 const nums = [1, 3, 6, 8];
 const test = [true, false, false, true];
@@ -103,6 +101,6 @@ console.log(bestMovie);
 movies.push({ id: 5, title: "Batman", rating: 2.4 });
 console.log(movies);
 
-// return the id of the first movie that te rating is greater than 4
+// return the id of the first movie that the rating is greater than 4
 const idMovie = movies.find((movie) => movie.rating > 4);
 console.log(idMovie.id);

@@ -11,7 +11,7 @@ const person = {
   isMarried: true,
   friends: ["Peter", "Jane", "Susan"],
   descripton: function () {
-    return `My name us ${this.name}, and i am ${this.age} years old`;
+    return `My name is ${this.name}, and i am ${this.age} years old`;
   },
   maritalSummary: function () {
     return `${this.name} ${this.isMarried ? "is" : "is not"} married`;

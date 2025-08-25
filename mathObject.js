@@ -18,9 +18,9 @@ console.log(Math.ceil(91.55)); // round up
 console.log(Math.floor(91.999)); // round Down
 console.log(Math.trunc(10.23)); // it removes decimal point
 
-// random - it  generates psuedorandom nums between 0-1
+// random - it  generates psuedo-random nums between 0-1
 console.log(Math.random());
-// 0 - 1  
+// 0 - 10
 console.log(Math.trunc(Math.random() * 10));
 
 // 1-20
